@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit-burst</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- tailwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +22,8 @@
             }
         }
     </script>
+    <!-- fontawsomelink -->
+    <script src="https://kit.fontawesome.com/07d92a7492.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +31,7 @@
     <!-- font styles -->
 
     <style>
-        .fontlato{
+        .fontlato {
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -37,18 +41,79 @@
 
 <body>
 
-    <header class="container mx-auto">
-        <!-- navbar-start -->
-        <nav>
+    <header class="container mx-auto my-14">
+        <!-- navbar-normal -->
+        <nav class="md:text-white items-center">
+            <div class="navbar hidden md:flex bg-[#F85559] rounded-full lg:p-5">
+                <div class="navbar-start flex">
+                    <ul class="menu menu-horizontal gap-3">
+                        <li><a>Home</a></li>
+
+                        <li><a>About Us</a></li>
+
+                        <li><a>Shop</a></li>
+
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center items-center gap-1  ">
+                    <img src="images/logo.png" alt="logo" class="w-12	">
+                    <h1 class="text-4xl	font-bold">Fruit Burst</h1>
+
+                </div>
+
+                <div class="navbar-end hidden lg:flex">
+                    <div class="relative lg:w-96 form-control">
+                        <input type="text " class="input rounded-full " placeholder="Search here">
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center ">
+
+                            <svg class="h-5 w-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m-2 0a7 7 0 1 0-7-7 7 7 0 0 0 7 7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
 
         </nav>
 
+        <!-- mobileview nav -->
+        <nav class=" flex p-2  justify-between md:hidden">
+            <!-- logo -->
+            <div class="flex   gap-28 items-center">
+
+                <div class="flex items-center gap-1 flex-1  ">
+                    <img src="images/logo.png" alt="logo" class="w-12	">
+                    <h1 class="text-xl	md:text-4xl	font-bold">Fruit Burst</h1>
+
+                </div>
+               <div class=" justify-end">
+                <button class="btn  flex-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block w-5 h-5 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+               </div>
+            </div>
+        </nav>
+
+
+
+
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto my-32">
+
+
+
+
 
     </main>
     <footer>
