@@ -17,6 +17,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'customcolor': '#F85559',
                     }
                 }
             }
@@ -39,7 +40,7 @@
 
 </head>
 
-<body>
+<body class="fontlato">
 
     <header class="container mx-auto my-14">
         <!-- navbar-normal -->
@@ -84,26 +85,110 @@
 
         <!-- mobileview nav -->
         <nav class=" flex justify-between p-2  md:hidden">
-           
+
             <div class="flex justify-between items-center w-full">
-                 <!-- logo -->
+                <!-- logo -->
                 <div class="flex justify-start items-center gap-1 flex-1  ">
                     <img src="images/logo.png" alt="logo" class="w-12	">
                     <h1 class="text-xl	md:text-4xl	font-bold">Fruit Burst</h1>
 
                 </div>
                 <!-- button -->
-               <div class=" justify-end">
-                <button class="btn  justify-end btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        class="inline-block w-5 h-5 stroke-current">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-               </div>
+                <div class=" justify-end">
+                    <button class="btn  justify-end btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-5 h-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
+        <!-- banner section -->
+        <section class="my-32">
+
+            <div class="carousel w-full">
+                <!-- slide 1 -->
+                <div id="slide1"
+                    class="carousel-item bg-[url('images/banner1.png')] bg-cover bg-no-repeat 	 relative w-full ">
+                    <div class=" text-white  lg:p-10 text-center lg:space-y-6 mx-auto my-28 ">
+                        <h1 class="lg:text-7xl font-black ">
+                            Exotic tastes at your
+                            <br> doorstep
+                        </h1>
+                        <p>We supply highly quality organic products</p>
+
+                        <button class="btn  bg-customcolor border-none  text-white">
+                            Shop Now
+                        </button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide2 -->
+                <div id="slide2"
+                    class="carousel-item bg-[url('images/banner2.png')] bg-cover bg-no-repeat max-w-screen-2xl	 relative w-full">
+                    <div class=" text-white  lg:p-10 text-center lg:space-y-6 mx-auto my-28">
+                        <h1 class="lg:text-7xl font-black ">
+                            Exotic tastes at your
+                            <br> doorstep
+                        </h1>
+                        <p>We supply highly quality organic products</p>
+
+                        <button class="btn  bg-customcolor border-none  text-white">
+                            Shop Now
+                        </button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide3 -->
+                <div id="slide3"
+                    class="carousel-item bg-[url('images/banner3.png')] bg-cover bg-no-repeat max-w-screen-2xl	 relative w-full">
+                    <div class=" text-white  lg:p-10 text-center lg:space-y-6 mx-auto my-28 ">
+                        <h1 class="lg:text-7xl font-black ">
+                            Exotic tastes at your
+                            <br> doorstep
+                        </h1>
+                        <p>We supply highly quality organic products</p>
+
+                        <button class="btn  bg-customcolor border-none  text-white">
+                            Shop Now
+                        </button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide4 -->
+                <div id="slide4"
+                    class="carousel-item bg-[url('images/banner4.png')] bg-cover bg-no-repeat max-w-screen-2xl	 relative w-full">
+                    <div class=" text-white  lg:p-10 text-center lg:space-y-6 mx-auto my-28 ">
+                        <h1 class="lg:text-7xl font-black ">
+                            Exotic tastes at your
+                            <br> doorstep
+                        </h1>
+                        <p>We supply highly quality organic products</p>
+
+                        <button class="btn  bg-customcolor border-none  text-white">
+                            Shop Now
+                        </button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
 
